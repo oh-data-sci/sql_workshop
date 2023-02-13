@@ -35,7 +35,7 @@ next, open the database file/document from `data/sqlite-sakila.db`:
 optionally, you can then configure your application appearance and behaviour:
 
 ```
-    sqlite>.heade.open r ON
+    sqlite>.header ON
     sqlite>.mode qbox
     sqlite>.show
 ```
