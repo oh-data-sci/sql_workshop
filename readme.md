@@ -1,7 +1,9 @@
 from zero to query
 ===
+![from zero to query](img/from02sql.001.jpeg)
 # introduction
 this is a free sql workshop for beginners offered in the brighton data forum in 2023. the workshop is based on exercises that gradually build up skills in sql. in order to practice the commands you need the training database included for your convenience in this repo. the database is the sakila database which i got from kaggle, [here](https://www.kaggle.com/datasets/atanaskanev/sqlite-sakila-sample-database) and [here](https://www.kaggle.com/code/dilarabr/dvd-rental-database-project-sqlite). it was originally made for `mysql`, as is [described here](https://dev.mysql.com/doc/sakila/en/): 
+
 
 # get started
 since this is a workshop with exercises, the only way to benefit from this is by following/doing the exercises.
@@ -70,17 +72,5 @@ we do not cover the full range of query possibilities in this workshop. the quer
 
 
 # the exercises
-the exercises, and their solutions, are found in the `exercises/` folder. they introduce, in the following order
-
-## show table 
-
-
-
-- `SELECT * FROM <tablename> ORDER BY <a_column> LIMIT <n>`
-- `SELECT * FROM <tablename> ORDER BY <a_column> LIMIT <n>`
-- `SELECT * FROM <tablename> ORDER BY <a_column> LIMIT <n>`
-
-
-
-
+the exercises, are found in the `exercises.md` document. their solutions are found in the `solutions/` folder.
 

@@ -1,8 +1,16 @@
+exercises
+===
+# introduction 
+these are light exercises for at 2 hour workshop
+
+
 ## 01 retrieve table contents
 - get a list of tables with `.tables`
 - explore all columns of the `category` table, using `SELECT * FROM <tablename>`
 - explore the first 5 records of each table
 - rename the columns on output with: `SELECT col AS colname FROM table`
+
+## 02 aggregate functions: COUNT, SUM, AVG, MIN, MAX
 - use `COUNT(*)` for a count of records. 
 - use `COUNT(DISTINCT <colname>)` for a count of distinct values in column.
 - out 200 actors how many distinct first names are there?
@@ -15,6 +23,7 @@
 - how long are the films, generally?
 - what date range does our rental dataset cover?
 - what range does the rental rate span?
+
 ## 03 filter by WHERE condition
 - only show me the 'G' rated films: use a single '=' for exact match
 - what is the name of the country with country_id=97?
@@ -50,3 +59,6 @@
 - how many films are there at each price point? 
 - which are the most/least common?
 - how many films have each rental duration allowed?
+
+## final challenge:
+- which top 10 actors were rented out the greatest number of times, counting only ‘R’ rated films made in 2006?
