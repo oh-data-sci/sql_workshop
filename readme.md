@@ -54,6 +54,7 @@ next, inspect what tables are available in the training database
 
 if your output is like the above, you are ready to start the exercises.
 
+
 # slides
 the slides are found in the `notes/` folder. open them first and read the first few, and then work along on your `sqlite` instance. 
 ## query structures covered
