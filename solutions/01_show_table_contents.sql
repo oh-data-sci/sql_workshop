@@ -27,10 +27,13 @@ SELECT * FROM staff                  LIMIT 5;
 SELECT * FROM staff_list             LIMIT 5;
 SELECT * FROM store                  LIMIT 5;
 
--- you can select specific columns, separated with a comma
+-- you can select specific columns, separated with a comma:
 SELECT title, rating, length, release_year FROM film LIMIT 10;
 SELECT first_name, last_name FROM staff;
 
 -- you can rename the columns on output with: SELECT col AS colname FROM table:
 SELECT first_name AS recipient, email AS email_address FROM staff;
+
+-- you can alias the table and refer to the alias in the columns with: SELECT a.col1, a.col2 FROM table a
+SELECT a.first_name, a.last_name FROM staff a;
 

@@ -30,7 +30,6 @@ SELECT COUNT(DISTINCT first_name) AS num_names FROM actor; -- 128
 SELECT COUNT(DISTINCT last_name) AS num_surnames FROM actor; -- 121
 -- out 200 actors how many distinct last names? 
 SELECT COUNT(DISTINCT special_features) AS num_features FROM film; -- 15
-
 -- how many pricing tiers are there for a film's replacement cost?
 SELECT COUNT(DISTINCT replacement_cost) AS num_features FROM film; -- 21
 

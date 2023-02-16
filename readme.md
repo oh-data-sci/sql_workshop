@@ -35,21 +35,21 @@ next, open the database file/document from `data/sqlite-sakila.db`:
 optionally, you can then configure your application appearance and behaviour:
 
 ```
-    sqlite>.header ON
-    sqlite>.mode qbox
-    sqlite>.show
+    sqlite> .header ON
+    sqlite> .mode qbox
+    sqlite> .show
 ```
 
 next, inspect what tables are available in the training database
 ```
     sqlite> .tables
-    actor                   film                    payment
-    address                 film_actor              rental
-    category                film_category           sales_by_film_category
-    city                    film_list               sales_by_store
-    country                 film_text               staff
-    customer                inventory               staff_list
-    customer_list           language                store
+    actor           film            payment
+    address         film_actor      rental
+    category        film_category   sales_by_film_category
+    city            film_list       sales_by_store
+    country         film_text       staff
+    customer        inventory       staff_list
+    customer_list   language        store
 ```
 
 if your output is like the above, you are ready to start the exercises.

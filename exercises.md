@@ -1,7 +1,11 @@
 exercises
 ===
 # introduction 
-these are light exercises for at 2 hour workshop
+these are light exercises for a 2 hour workshop, "_from zero to query_", using the `sakila` training database with `sqlite`. there is no expectation that the participants finish all of these exercises in the time available. the solutions to these exercises are found in the `solutions/` folder.
+
+the exercises below practice a specific aspect of the `SELECT` statement and are meant to build towards preparing answering the question: 
+
+    "which top 10 actors were rented out the greatest number of times, counting only ‘R’ rated films made in 2006?"
 
 
 ## 01 retrieve table contents
