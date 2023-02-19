@@ -39,9 +39,7 @@ SELECT COUNT(DISTINCT replacement_cost) AS num_features FROM film; -- 21
 -- how much would it cost to buy one copy of all the films?
 SELECT 'total cost' AS calculation, SUM(replacement_cost) AS result FROM film; -- £19,984
 
--- what is the average replacement cost of all the films
-SELECT 'average cost' AS calculation, AVG(replacement_cost) AS result FROM film; -- £19.98
-
+  
 -- what is the maximum replacement cost of all the films
 SELECT 'maximum cost' AS calculation, MAX(replacement_cost) AS result FROM film; -- £29.99
 

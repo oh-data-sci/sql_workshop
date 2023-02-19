@@ -1,4 +1,4 @@
-
+-- 
 -- which actor ids have appeared in fewer than 15 films?
 SELECT actor_id, COUNT(*) AS num FROM film_actor GROUP BY actor_id HAVING num<15;
 -- which actor names?
