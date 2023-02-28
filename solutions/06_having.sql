@@ -1,6 +1,9 @@
--- 
+-- which actor name is shared between 2 actors?
+SELECT first_name, last_name, COUNT(*) AS num_actors FROM actor GROUP BY first_name, last_name HAVING num_actors > 1;
+
 -- which actor ids have appeared in fewer than 15 films?
 SELECT actor_id, COUNT(*) AS num FROM film_actor GROUP BY actor_id HAVING num<15;
+
 -- which actor names?
 SELECT a.first_name, a.last_name, COUNT(*) AS num FROM film_actor fa INNER JOIN actor a ON fa.actor_id=a.actor_id GROUP BY a.actor_id HAVING num<15;
 

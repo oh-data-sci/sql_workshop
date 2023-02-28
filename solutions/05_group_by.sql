@@ -1,3 +1,4 @@
+
 SELECT replacement_cost AS price, COUNT(*) AS num_films FROM film GROUP BY replacement_cost;
 
 SELECT 

@@ -56,25 +56,24 @@ made in 2006?"
 - which film has the lowest price per minute of footage?
 - which three films have the highest rental rate per minute of feature length?
 
-## 05 merge two tables with a `JOIN`
-- use `INNER JOIN ...  ON ...` to merge two tables and return rows where key value is matched in both tables.
-- show the country name that each city belongs to, using `country_id` as the key
-- show a table of `title` and `language` of some 10 'R' rated films 
-- which `language` are the 15 longest films in?
-- you can join multiple tables together in one go: show the title and category of 'G' and 'PG' films between 85 min and 90 min long
-
-## 06 segment rows by column value with `GROUP BY`
+## 05 segment rows by column value with `GROUP BY`
 - how many films are there of each rating?
 - how many films are there at each price point? 
 - which are the most/least common?
 - how many films have each rental duration allowed?
 
-## 07 filter aggregated values with a `HAVING` condition
+## 06 filter aggregated values with a `HAVING` condition
 - which actor ids have appeared in fewer than 15 films?
 - what actor name (first name, last name) occurs more than once in the actor table?
 - what film rating categories have average length of film under 115 minutes?
 - what countries have more than 40 cities?
 
+## 07 merge two tables with a `JOIN`
+- use `INNER JOIN ...  ON ...` to merge two tables and return rows where key value is matched in both tables.
+- show the country name that each city belongs to, using `country_id` as the key
+- show a table of `title` and `language` of some 10 'R' rated films 
+- which `language` are the 15 longest films in?
+- you can join multiple tables together in one go: show the title and category of 'G' and 'PG' films between 85 min and 90 min long
 
 # final challenge
 - which top 10 actors were rented out the greatest number of times, counting only ‘R’ rated films made in 2006?
