@@ -1,7 +1,8 @@
-
+-- - 04.01 what are the top 20 longest films?
 -- what are the top 20 longest films?
 SELECT title, length, rating, rental_duration FROM film ORDER BY length DESC LIMIT 20;
 
+-- - 04.02 which film has the highest price per minute of footage?
 -- which film has the highest price per minute of footage?
 SELECT 
   film_id,
@@ -14,6 +15,7 @@ ORDER BY price_per_minute DESC
 LIMIT 1
 ; -- RIDGEMONT SUBMARINE
 
+-- - 04.03 which film has the lowest price per minute of footage?
 -- which film has the lowest price per minute of footage?
 SELECT 
   film_id,
@@ -28,6 +30,7 @@ LIMIT 1
 
 
 -- which three films have the highest rental rate per minute of feature length?
+-- - 04.04 which three films have the highest rental rate per minute of feature length?
 SELECT 
   film_id,
   title, 
