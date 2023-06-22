@@ -10,4 +10,4 @@ WHERE f.rating='R'
     AND f.release_year=2006
 GROUP BY a.first_name, a.last_name
 ORDER BY num_rentals DESC
-LIMIT 10
+LIMIT 10;
