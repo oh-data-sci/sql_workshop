@@ -1,5 +1,4 @@
 -- INNER JOIN two tables only returns rows where key value is matched in both tables.
-
 -- show the country name that each city belongs to, using country_id as the key
 SELECT city, country
 FROM city a

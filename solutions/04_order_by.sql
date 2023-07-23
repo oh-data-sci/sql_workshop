@@ -17,7 +17,7 @@ LIMIT 1
 
 -- - 04.03 which film has the lowest price per minute of footage?
 -- which film has the lowest price per minute of footage?
-SELECT 
+SELECT
   film_id,
   title, 
   replacement_cost, 
