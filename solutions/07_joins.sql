@@ -34,7 +34,7 @@ FROM
 SELECT COUNT(DISTINCT language_id) AS num_film_languages FROM film;
 
 
--- you can join multiple tables together in one go: show the title and category of 'G' and 'PG' films between 85 min and 90 min long
+-- you can join multiple tables together in one go: show the title and category of 'G' and 'PG' films between 85 min and 90 min long. try it.
 SELECT
   f.title  AS film_title,
   f.rating AS film_rating,
