@@ -16,12 +16,12 @@ made in 2006?"
 * 01.01 get a list of tables in the sakila database.
 * 01.02 explore all columns of the `category` table, using `SELECT * FROM <tablename>`
 * 01.03 explore the first 5 records of a table of your choice using a `LIMIT` clause.
-* 01.04 try to rename the columns on output with: `SELECT col AS colname FROM <table>`
+* 01.04 try to rename the columns of the output: `SELECT col AS colname FROM <table>`
 
 ## 02 aggregate functions
-the functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX()`
+the aggregate functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX()`
 
-- 02.01 use `COUNT(*)` for a count of records. 
+- 02.01 use `COUNT(*)` to get a count of records in a table.
 - 02.02 use `COUNT(DISTINCT <colname>)` for a count of distinct values in a column.
 - 02.03 out of all 200 actors, how many distinct first names are there?
 - 02.04 out of all 200 actors, how many distinct surnames are there?
@@ -31,24 +31,24 @@ the functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX()`
 - 02.08 what is the maximum replacement cost of the films?
 - 02.09 what is the minimum replacement cost of the films?
 - 02.10 how long are the films, generally? (ie. calculate the range and average length).
-- 02.11 what date range (first date, last date) does our rental table cover? 
+- 02.11 what date range (first date, last date) does our rental table cover?
 - 02.12 what does it cost to rent the cheapest film? how about the most expensive?
 
 ## 03 filter rows by `WHERE` condition
 - 03.01 only show (any) 5 of the 'G' rated films. (use a single '=', or '<>' for exact match).
 - 03.02 what is the name of the country with `country_id=97`?
 - 03.03 what is the title of the film with `film_id=97`?
-- 03.04 use `<>` to exclude matches: 3how many films are there that don't have an 'R' rating?
-- 03.05 can also use `!=`. use it to show how many films are there that don't have an 'G' rating?
-- 03.06 what is the least replacement cost of a film whose price exceeds £12?
-- 03.07 use `IN` (elem1, elem2, ...) to test membership in a list.
-- 03.08 what is the total length of films that are not rated 'R', nor 'NC-17'?
-- 03.09 use `LIKE` and the `%` wildcard for approximate string matches
+- 03.04 use `<>` to exclude matches: how many films are there that don't have an 'R' rating?
+- 03.05 you can also use `!=` to exclude matches. use it to show how many films there are that don't have a 'G' rating?
+- 03.06 what is the least replacement cost of a film whose replacement price exceeds £12?
+- 03.07 use `IN` (elem1, elem2, ...) to test membership in a list. how many films are there that have either 'G', 'PG', or 'PG-13' rating?
+- 03.08 you can use `NOT IN` to reverse the condition. what is the total length of films that are not rated 'R', nor 'NC-17'?
+- 03.09 use `LIKE` and the `%` wildcard for approximate string matches. how many film titles start with 'Y'?
 - 03.10 wassisname, that actor... name begins with "jo"- something?
 - 03.11 use `BETWEEN ... AND ...` to constrain a quantitative to a range: how many films are between 80 and 90 minutes long, inclusive?
-- 03.12 show me films that are between 80 and 81 minutes long, inclusive?
+- 03.12 show me films that are between 80 ad 81 minutes long, inclusive?
 - 03.13 how many rentals were made between '2005-12-15' and '2005-12-31'
-- 03.14 you can string together multple conditions using brackets, and logical the operators: `AND`, `OR`
+- 03.14 you can string together multple conditions using brackets + logical the operators: `AND`, `OR`. how many affordable (replacement cost under $16.00) family films (rating='G') are there?
 
 ## 04 sort output with `ORDER BY... LIMIT ...`
 - 04.01 what are the top 20 longest films?
@@ -63,10 +63,10 @@ the functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX()`
 - 05.04 how many films have each rental duration allowed?
 
 ## 06 filter aggregated values with a `HAVING` condition
-- which actor ids have appeared in fewer than 15 films?
-- what actor name (first name, last name) occurs more than once in the actor table?
-- what film rating categories have average length of film under 115 minutes?
-- what countries have more than 40 cities?
+- 06.01 which actor ids have appeared in fewer than 15 films?
+- 06.02 which actor's name (first name, last name) occurs more than once in the actor table?
+- 06.03 what film rating categories have average length of film under 115 minutes?
+- 06.04 what countries have more than 40 cities?
 
 ## 07 merge two tables with a `JOIN`
 - use `INNER JOIN ...  ON ...` to merge two tables and return rows where key value is matched in both tables.
