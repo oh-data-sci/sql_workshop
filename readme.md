@@ -1,12 +1,19 @@
-from zero to query
+sql workshops
 ===
-![from zero to query](img/from02sql.001.jpeg)
 # introduction
-this is a free sql workshop for beginners offered in the brighton data forum in 2023. the workshop is based on exercises that gradually build up skills in sql. in order to practice the commands you need the training database included for your convenience in this repo. the database is the sakila database which i got from kaggle, [here](https://www.kaggle.com/datasets/atanaskanev/sqlite-sakila-sample-database) and [here](https://www.kaggle.com/code/dilarabr/dvd-rental-database-project-sqlite). it was originally made for `mysql`, as is [described here](https://dev.mysql.com/doc/sakila/en/): 
+this is a pair of free workshops on sql for beginners offered in the brighton data forum in 2023. the workshops are 
+
+1. **from zero to query** (for absolute beginners, introduces the `SELECT` statement and some variants of it)
+2. **the sql sequel** (the next step for beginners, a short refresher, followed by introduction to subqueries, common table expressions, pivots)
+3. **tbd** (a follow up for slightly more advanced topics like window functions and user defined functions)
+
+the workshop is based on exercises that gradually build up skills in sql. in order to practice the commands you need the training database included for your convenience in this repo. the database is the sakila database which i got from kaggle, [here](https://www.kaggle.com/datasets/atanaskanev/sqlite-sakila-sample-database) and [here](https://www.kaggle.com/code/dilarabr/dvd-rental-database-project-sqlite). it was originally made for `mysql`, as is [described here](https://dev.mysql.com/doc/sakila/en/): 
 
 
-# get started
-since this is a workshop with exercises, the only way to benefit from this is by following/doing the exercises.
+# getting started
+![from zero to query](img/from02sql.001.jpeg)
+
+since this is a workshop with exercises, the only way to benefit from this is by following/doing the exercises. this requires some preparation:
 
 	1. clone or download this repo. 
     2. install sqlite.
@@ -32,7 +39,7 @@ next, open the database file/document from `data/sqlite-sakila.db`:
     .open data/sqlite-sakila.db
 ```
 
-optionally, you can then configure your application appearance and behaviour:
+optionally, you can configure your `sqlite3` output appearance and behaviour:
 
 ```
     sqlite> .header ON
@@ -41,6 +48,7 @@ optionally, you can then configure your application appearance and behaviour:
 ```
 
 next, inspect what tables are available in the training database
+
 ```
     sqlite> .tables
     actor           film            payment
@@ -52,7 +60,7 @@ next, inspect what tables are available in the training database
     customer_list   language        store
 ```
 
-if your output is like the above, you are ready to start the exercises.
+if your output is like the above, you are ready to start the exercises for this workshop.
 
 
 # slides
@@ -73,5 +81,5 @@ we do not cover the full range of query possibilities in this workshop. the quer
 
 
 # the exercises
-the exercises, are found in the `exercises.md` document. their solutions are found in the `solutions/` folder.
+the exercises, are found in the `exercises.md` document in each workshop folder. their solutions are found in the `solutions/` sub-folder.
 
