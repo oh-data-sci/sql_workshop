@@ -1,16 +1,28 @@
-hello to the participants of the second cohort of the sql workshop. since it has now been a week since the workshop, i fully expect that the details are now fully forgotten. that is fine, but let us review some main points covered.
+a quick review
+===
+# introduction 
+the zero to query workshop covers many details and many attendees were seeing those for the very first time. thus it is natural to expect that they get forgotten in less than one week from the event. a one week after the fact is a good time to remind/review the attendees what was learned and waht it means. 
 
+# revision
 - we learned that sql is a powerful language, and the lingua franca of databases.
-- we learned to write sql queries which:
-    + always start with `SELECT ...`
-    + always end with `;`
-    + always contain a `FROM` clause
-    + optionally include one or more of the
-    `JOIN`, `WHERE`, `GROUP BY`, `HAVING`, `ORDER BY`, `LIMIT` clauses.
-- the real magic power of knowing sql is being able to translate a real-world question into a query that produces an answer, when run on a database with the relevant information.
-- the trickiest concept we discussed is table joins. always try to visualise the desired output of a join before trying to write it.
+- the sql statements we learned all begin with `SELECT ...`, contain a `FROM ...` reference, and end with a `;`
+- all sql statements are composed of component *clauses*. the minimum statement has only two: `SELECT ... FROM ...;`
+- the clauses, in the order you type them, are: 
+    + `SELECT ...`
+    + `FROM ...`,
+    + `WHERE ...`,
+    + `GROUP BY ...`,
+    + `HAVING ...`,
+    + `ORDER BY ...`,
+    + `LIMIT ...`,
+    + `;`.
+- by arranging these components together correctly, smartly filling in the `...` placeholders with computations/column identifiers`, table identifiers, and running your code directly on a database/data warehouse, you can perform any data wrangling task which requires slicing, filtering, splitting up and aggregating, on any data set, of almost any size.
+- the real power of knowing sql is the ability to translate a real-world question into a query to run on the available data and producing an answer.
+- the trickiest concept we discussed is table joins. every data professional should understand table joins.
+    + always try to visualise the desired output of a join before trying to write a `JOIN` clause.
+    + `LEFT JOIN` or `INNER JOIN` are the most useful kinds
+    + first join smaller tables, then larger. 
 - i encourage you to practice with the exercise set that came with the workshop. you will also find the solutions to the exercises in the workshop repository.
-- don't forget, should you run into sql trouble in the future, that you have plenty of colleagues (myself, jaishankar, damir, and many others) ready and willing to help out.
 
 finally, please consider this query, which reviews most of what we covered:
 
