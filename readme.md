@@ -1,19 +1,22 @@
-from zero to query
+sql workshops
 ===
-![from zero to query](img/from02sql.001.jpeg)
 # introduction
-this is a free sql workshop for beginners offered in the brighton data forum in 2023. the workshop is based on exercises that gradually build up skills in sql. in order to practice the commands you need the training database included for your convenience in this repo. the database is the sakila database which i got from kaggle, [here](https://www.kaggle.com/datasets/atanaskanev/sqlite-sakila-sample-database) and [here](https://www.kaggle.com/code/dilarabr/dvd-rental-database-project-sqlite). it was originally made for `mysql`, as is [described here](https://dev.mysql.com/doc/sakila/en/): 
+this is a trilogy of free workshops on sql for beginners offered in the brighton data forum in 2023. the workshops are 
 
+1. **from zero to query** (for absolute beginners, introduces the `SELECT` statement and some variants of it)
+2. **the sql sequel** (the next step for beginners, a short refresher, followed by introduction to subqueries, common table expressions, pivots)
+3. **tbd** (a planned follow up for slightly more advanced topics like window functions and user defined functions)
 
-# get started
-since this is a workshop with exercises, the only way to benefit from this is by following/doing the exercises.
+# preparation
+since this is a workshop with exercises, the only way to benefit from this is by following/doing the exercises. this requires some preparation:
 
 	1. clone or download this repo. 
     2. install sqlite.
 
+## about `sqlite3`
 `sqlite` is a simple and popular open source sql database engine in the form a command line application. you will access it in a terminal (unix/linux/mac) or the command prompt (windows). you may already have it installed. in case you do not, you can download and install `sqlite` from [here](https://www.sqlite.org/download.html).
 
-navigate to your copy of the repo folder and launch `sqlite` there. when you do it should look something like the following (on my system the `sqlite` application is envoked with `sqlite3`):
+navigate to your copy of the repo folder and launch `sqlite` there. when you do it should look something like the following (on my mac, the `sqlite` application is envoked with `sqlite3`):
 
 ```
     sql_workshop> sqlite3
@@ -24,15 +27,15 @@ navigate to your copy of the repo folder and launch `sqlite` there. when you do 
     sqlite>
 ```
 
-(note that to quit the `sqlite` application at any time you just type `.quit` in the prompt.)
+(to quit the `sqlite` application, type `.quit` at the prompt.)
 
-next, open the database file/document from `data/sqlite-sakila.db`:
+next, try opening one of the databases, as a test, (e.g. `data/sqlite-sakila.db`):
 
 ```
     .open data/sqlite-sakila.db
 ```
 
-optionally, you can then configure your application appearance and behaviour:
+optionally, you can configure your `sqlite3` output appearance and behaviour:
 
 ```
     sqlite> .header ON
@@ -41,6 +44,7 @@ optionally, you can then configure your application appearance and behaviour:
 ```
 
 next, inspect what tables are available in the training database
+
 ```
     sqlite> .tables
     actor           film            payment
@@ -52,26 +56,14 @@ next, inspect what tables are available in the training database
     customer_list   language        store
 ```
 
-if your output is like the above, you are ready to start the exercises.
-
-
-# slides
-the slides are found in the `notes/` folder. open them first and read the first few, and then work along on your `sqlite` instance. 
-## query structures covered
-we do not cover the full range of query possibilities in this workshop. the queries we cover are all of one of the following types:
-
-- `SELECT * FROM <tablename>`
-- `SELECT * FROM <tablename> LIMIT <n>`
-- `SELECT <column1>, <column2>, ... FROM <tablename>`
-- `SELECT <column1> AS alias1, <column2> AS alias2, ... FROM <tablename>`
-- `SELECT <columns> FROM <tablename> WHERE <condition>`
-- `SELECT <columns> FROM <tablename> ORDER BY <a_column> LIMIT <n>`
-- `SELECT <a_column>, <aggregation of columns>, ... FROM <tablename> GROUP BY <a_column>`
-- `SELECT <a_column>, <aggregation of columns>, ... FROM <tablename> GROUP BY <a_column> HAVING <condition>`
-- `SELECT a.column1, b.column1 FROM <tablename> a INNER JOIN <tablename> b ON a.key_column=b.key_column`
-- `SELECT a.column1, b.column1 FROM <tablename> a LEFT JOIN <tablename> b ON a.key_column=b.key_column`
+if your output is like the above, you are ready to start the exercises for this workshop.
 
 
 # the exercises
-the exercises, are found in the `exercises.md` document. their solutions are found in the `solutions/` folder.
+each workshop is based on exercises that gradually build up skills in sql. you will find these in the `exercises/` folder under each workshop. the exercises are provided as markdown and as pdf files.
+
+
+# the data sets
+in order to practice the commands you need the training database included for your convenience in this repo. in the first workshop we work with the sakila training database which i got from kaggle, [here](https://www.kaggle.com/datasets/atanaskanev/sqlite-sakila-sample-database) and [here](https://www.kaggle.com/code/dilarabr/dvd-rental-database-project-sqlite). it was originally made for `mysql`, as is [described here](https://dev.mysql.com/doc/sakila/en/): 
+
 
