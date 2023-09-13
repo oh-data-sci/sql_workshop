@@ -1,11 +1,11 @@
--- INNER JOIN two tables only returns rows where key value is matched in both tables.
+-- 07.01 INNER JOIN two tables only returns rows where key value is matched in both tables.
 -- show the country name that each city belongs to, using country_id as the key
 SELECT city, country
 FROM city a
   INNER JOIN country b ON a.country_id=b.country_id
 ;
 
--- show a table of title and language of some 10 'R' rated films 
+-- 07.02 how a table of title and language of some 10 'R' rated films 
 SELECT f.title, f.length, l.name AS language
 FROM film f
   INNER JOIN language l ON f.language_id=l.language_id
@@ -13,7 +13,7 @@ WHERE rating='R'
 LIMIT 10
 ;
 
--- which language are the 15 longest films in?
+-- 07.03 which language are the 15 longest films in?
 SELECT
   f.title, f.length, l.name AS language
 FROM film f
@@ -22,7 +22,7 @@ ORDER BY length DESC
 LIMIT 15
 ;
 
--- wait a moment! how many distinct languages are there in the film list?!
+-- 07.04 wait a moment! how many distinct languages are there in the film list?!
 SELECT 
     DISTINCT l.name AS language
 FROM 
@@ -33,7 +33,7 @@ FROM
 SELECT COUNT(DISTINCT language_id) AS num_film_languages FROM film;
 
 
--- you can join multiple tables together in one go: show the title and category of 'G' and 'PG' films between 85 min and 90 min long. try it.
+-- 07.05 you can join multiple tables together in one go: show the title and category of 'G' and 'PG' films between 85 min and 90 min long. try it.
 SELECT
   f.title  AS film_title,
   f.rating AS film_rating,
@@ -47,3 +47,15 @@ WHERE
   rating IN ('G', 'PG')
   AND length BETWEEN 85 AND 90
 ;
+
+
+-- 07.06
+SELECT 
+    DISTINCT b.country 
+FROM 
+    city a 
+    INNER JOIN country b ON a.country_id=b.country_id 
+WHERE city LIKE 'Q%'
+;
+
+

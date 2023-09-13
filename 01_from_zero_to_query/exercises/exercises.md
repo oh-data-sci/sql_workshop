@@ -14,9 +14,10 @@ made in 2006?"
 
 ## 01 retrieve table contents
 * 01.01 get a list of tables in the sakila database.
-* 01.02 explore all columns of the `category` table, using `SELECT * FROM <tablename>`
+* 01.02 explore all columns of the `category` table, using `SELECT * FROM <tablename>;`
 * 01.03 explore the first 5 records of a table of your choice using a `LIMIT` clause.
-* 01.04 try to rename the columns of the output: `SELECT col AS colname FROM <table>`
+* 01.04 try to rename the columns of the output: `SELECT name AS the_name FROM <table>;`
+* 01.05 how many distinct amount values are there in table payment?
 
 ## 02 aggregate functions
 the aggregate functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX()`
@@ -69,11 +70,13 @@ the aggregate functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX
 - 06.04 what countries have more than 40 cities?
 
 ## 07 merge two tables with a `JOIN`
-- use `INNER JOIN ...  ON ...` to merge two tables and return rows where key value is matched in both tables.
-- show the country name that each city belongs to, using `country_id` as the key
-- show a table of `title` and `language` of some 10 'R' rated films 
-- which `language` are the 15 longest films in?
-- you can join multiple tables together in one go: show the title and category of 'G' and 'PG' films between 85 min and 90 min long. try it.
+- 07.01 use `INNER JOIN ...  ON ...` to merge two tables and return rows where key value is matched in both tables.
+- 07.02 show the country name that each city belongs to, using `country_id` as the key
+- 07.03 show a table of `title` and `language` of some 10 'R' rated films 
+- 07.04 which `language` are the 15 longest films in?
+- 07.05 you can join multiple tables together in one go: show the title and category of 'G' and 'PG' films between 85 min and 90 min long. try it.
+- 07.06 what countries are the cities whose name starts with 'Q' in?
+
 
 # final challenge
 - which top 10 actors were rented out the greatest number of times, counting only ‘R’ rated films made in 2006?

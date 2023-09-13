@@ -40,3 +40,7 @@ SELECT first_name AS recipient, email AS email_address FROM staff;
 -- you can also alias the table and refer to the alias in the columns with: SELECT a.col1, a.col2 FROM table a
 SELECT a.first_name, a.last_name FROM staff a;
 
+-- 01.04
+SELECT COUNT(DISTINCT amount) FROM payment;
+SELECT DISTINCT amount FROM payment ORDER BY amount;
+
