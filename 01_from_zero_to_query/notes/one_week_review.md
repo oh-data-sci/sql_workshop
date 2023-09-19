@@ -1,7 +1,7 @@
 a quick review
 ===
 # introduction 
-the zero to query workshop covers many details and many attendees were seeing those for the very first time. thus it is natural to expect that they get forgotten in less than one week from the event. a one week after the fact is a good time to remind/review the attendees what was learned and waht it means. 
+the zero to query workshop covers many details and many attendees are seeing these for the very first time. thus it is natural to expect that they get forgotten in less than a week from the event. one week after the fact is a good time to remind the attendees what was learned and what it means. 
 
 # revision
 - we learned that sql is a powerful language, and the lingua franca of databases.
