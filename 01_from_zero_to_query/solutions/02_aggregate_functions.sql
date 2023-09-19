@@ -39,8 +39,7 @@ SELECT COUNT(DISTINCT replacement_cost) AS num_features FROM film; -- 21
 -- 
 
 -- # 02.06 how much would it cost to buy one copy of all the films?
--- how much would it cost to buy one copy of all the films?
-SELECT 'total cost' AS calculation, SUM(replacement_cost) AS result FROM film; -- £19,984
+SELECT 'total cost' AS calculation, SUM(replacement_cost) AS result FROM film; -- $19,984
 
 
 -- # 02.07 what is the average replacement cost of a film?
@@ -48,11 +47,11 @@ SELECT 'maximum cost' AS calculation, AVG(replacement_cost) AS result FROM film;
 
 
 -- # 02.08 what is the maximum replacement cost of the films?
-SELECT 'maximum cost' AS calculation, MAX(replacement_cost) AS result FROM film; -- £29.99
+SELECT 'maximum cost' AS calculation, MAX(replacement_cost) AS result FROM film; -- $29.99
 
 -- # 02.09 what is the minimum replacement cost of the films?
 -- what is the minimum replacement cost of all the films
-SELECT 'minimum cost' AS calculation, MIN(replacement_cost) AS result FROM film; -- £9.99
+SELECT 'minimum cost' AS calculation, MIN(replacement_cost) AS result FROM film; -- $9.99
 
 -- you can do multiple aggregations at once, separated by a comma:
 SELECT 
