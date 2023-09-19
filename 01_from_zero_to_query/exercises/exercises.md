@@ -61,7 +61,7 @@ the aggregate functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX
 - 05.01 how many films are there of each rating?
 - 05.02 how many films are there at each rental price point? 
 - 05.03 which are the most/least common?
-- 05.04 how many films have each rental duration allowed?
+- 05.04 how many films are there by each rental days duration allowed?
 
 ## 06 filter aggregated values with a `HAVING` condition
 - 06.01 which actor ids have appeared in fewer than 15 films?

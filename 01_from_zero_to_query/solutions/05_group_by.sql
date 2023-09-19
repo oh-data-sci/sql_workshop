@@ -37,8 +37,8 @@ ORDER BY num_films_at_price_point DESC
 ;
 
 
--- - 05.04 how many films have each rental duration allowed?
--- how many films have each rental duration allowed?
+-- - 05.04 how many films are there by each rental days duration allowed?
+-- how many films are there by each rental days duration allowed?
 SELECT
   rental_duration AS allowed_rental_duration_days,
   COUNT(*)        AS num_films
