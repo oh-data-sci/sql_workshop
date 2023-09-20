@@ -5,7 +5,7 @@ FROM city a
   INNER JOIN country b ON a.country_id=b.country_id
 ;
 
--- 07.02 how a table of title and language of some 10 'R' rated films 
+-- 07.02 show a table of title and language of some 10 'R' rated films
 SELECT f.title, f.length, l.name AS language
 FROM film f
   INNER JOIN language l ON f.language_id=l.language_id

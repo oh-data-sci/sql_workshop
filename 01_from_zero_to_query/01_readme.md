@@ -19,9 +19,9 @@ in this first workshop, aimed at absolute beginners, we will introduce the `SELE
 
 
 # slides
-the slides are found in the `notes/` folder. open them first and read the first few, and then work along on your `sqlite` instance. 
+the slides are found in the `notes/` folder. open them and read the first few, and then work along in your `sqlite` instance. 
 ## query structures covered
-we do not cover the full range of query possibilities in this workshop. the queries we cover are all of one of the following types:
+we do not cover the full range of query possibilities in this workshop. the queries we cover are one of the following types:
 
 - `SELECT * FROM <tablename>`
 - `SELECT * FROM <tablename> LIMIT <n>`

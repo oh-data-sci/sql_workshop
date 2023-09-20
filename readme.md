@@ -5,7 +5,7 @@ this is a trilogy of free workshops on sql for beginners offered in the brighton
 
 1. **from zero to query** (for absolute beginners, introduces the `SELECT` statement and some variants of it)
 2. **the sql sequel** (the next step for beginners, a short refresher, followed by introduction to subqueries, common table expressions, pivots)
-3. **tbd** (a planned follow up for slightly more advanced topics like window functions and user defined functions)
+3. **tbd** (a planned follow-up for slightly more advanced topics like window functions and user defined functions)
 
 # preparation
 since this is a workshop with exercises, the only way to benefit from this is by following/doing the exercises. this requires some preparation:
@@ -14,9 +14,9 @@ since this is a workshop with exercises, the only way to benefit from this is by
     2. install sqlite.
 
 ## about `sqlite3`
-`sqlite` is a simple and popular open source sql database engine in the form a command line application. you will access it in a terminal (unix/linux/mac) or the command prompt (windows). you may already have it installed. in case you do not, you can download and install `sqlite` from [here](https://www.sqlite.org/download.html).
+`sqlite` is a simple and popular open source sql database engine in the form of a command line application. you will access it in a terminal (unix/linux/mac) or the command prompt (windows). you may already have it installed. in case you do not, you can download and install `sqlite` from [here](https://www.sqlite.org/download.html).
 
-navigate to your copy of the repo folder and launch `sqlite` there. when you do it should look something like the following (on my mac, the `sqlite` application is envoked with `sqlite3`):
+navigate to your copy of the repo folder and launch `sqlite` there. when you do it should look something like the following (on my mac, the `sqlite` application is invoked with `sqlite3`):
 
 ```
     sql_workshop> sqlite3

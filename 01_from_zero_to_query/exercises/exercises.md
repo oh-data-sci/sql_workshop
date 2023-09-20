@@ -3,7 +3,7 @@ exercises
 # introduction 
 these are light exercises for a 2 hour workshop, "_from zero to query_", using the `sakila` training database with `sqlite`. there is no expectation that the participants finish all of these exercises in the time available. the solutions to these exercises are found in the `solutions/` folder.
 
-the exercises below practice a specific aspect of the `SELECT` statement and are meant to build towards preparing answering the question: 
+the exercises below each focus on a specific aspect of the `SELECT` statement and are meant to build towards answering the question: 
 
 ```
 "which top 10 actors were rented out 
@@ -31,7 +31,7 @@ the aggregate functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX
 - 02.07 what is the average replacement cost of a film?
 - 02.08 what is the maximum replacement cost of the films?
 - 02.09 what is the minimum replacement cost of the films?
-- 02.10 how long are the films, generally? (ie. calculate the range and average length).
+- 02.10 how long are the films, generally? (i.e. calculate the range and average length).
 - 02.11 what date range (first date, last date) does our rental table cover?
 - 02.12 what does it cost to rent the cheapest film? how about the most expensive?
 
@@ -41,7 +41,7 @@ the aggregate functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX
 - 03.03 what is the title of the film with `film_id=97`?
 - 03.04 use `<>` to exclude matches: how many films are there that don't have an 'R' rating?
 - 03.05 you can also use `!=` to exclude matches. use it to show how many films there are that don't have a 'G' rating?
-- 03.06 what is the least replacement cost of a film whose replacement price exceeds £12?
+- 03.06 what is the least replacement cost of a film whose replacement price exceeds $12?
 - 03.07 use `IN` (elem1, elem2, ...) to test membership in a list. how many films are there that have either 'G', 'PG', or 'PG-13' rating?
 - 03.08 you can use `NOT IN` to reverse the condition. what is the total length of films that are not rated 'R', nor 'NC-17'?
 - 03.09 use `LIKE` and the `%` wildcard for approximate string matches. how many film titles start with 'Y'?
@@ -49,7 +49,7 @@ the aggregate functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX
 - 03.11 use `BETWEEN ... AND ...` to constrain a quantitative to a range: how many films are between 80 and 90 minutes long, inclusive?
 - 03.12 show me films that are between 80 ad 81 minutes long, inclusive?
 - 03.13 how many rentals were made between '2005-12-15' and '2005-12-31'
-- 03.14 you can string together multple conditions using brackets + logical the operators: `AND`, `OR`. how many affordable (replacement cost under $16.00) family films (rating='G') are there?
+- 03.14 you can string together multiple conditions using brackets + logical the operators: `AND`, `OR`. how many affordable (replacement cost under $16.00) family films (rating='G') are there?
 
 ## 04 sort output with `ORDER BY... LIMIT ...`
 - 04.01 what are the top 20 longest films?
@@ -61,7 +61,7 @@ the aggregate functions are: `COUNT(), COUNT(DISTINCT ) SUM(), AVG(), MIN(), MAX
 - 05.01 how many films are there of each rating?
 - 05.02 how many films are there at each rental price point? 
 - 05.03 which are the most/least common?
-- 05.04 how many films have each rental duration allowed?
+- 05.04 how many films are there by each rental days duration allowed?
 
 ## 06 filter aggregated values with a `HAVING` condition
 - 06.01 which actor ids have appeared in fewer than 15 films?
