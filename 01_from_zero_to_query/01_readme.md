@@ -1,7 +1,7 @@
 from zero to query
 ===
 # introduction
-in this first workshop, aimed at absolute beginners, we will introduce the `SELECT` statement and learn to piece together the main components of a query:
+in this first workshop, aimed at absolute beginners and spreadsheet users, we will introduce the `SELECT` statement and learn to piece together the main components of a query:
 
 - `SELECT ... FROM ... [opt];`
 - where `[opt]` is one or more of 
@@ -17,11 +17,11 @@ in this first workshop, aimed at absolute beginners, we will introduce the `SELE
 ![from zero to query](../img/from02sql.001.jpeg)
 
 
-
 # slides
-the slides are found in the `notes/` folder. open them and read the first few, and then work along in your `sqlite` instance. 
+presentation slides are found in the `slides/` folder. open them and read the first few, and then work along in your `sqlite` instance. 
+
 ## query structures covered
-we do not cover the full range of query possibilities in this workshop. the queries we cover are one of the following types:
+while we cover all the clauses of the `SELECT` statement, we do not cover the full range of query possibilities in this workshop. the queries covererd are of the following types:
 
 - `SELECT * FROM <tablename>`
 - `SELECT * FROM <tablename> LIMIT <n>`
@@ -36,5 +36,5 @@ we do not cover the full range of query possibilities in this workshop. the quer
 
 
 # the exercises
-the exercises, are found in the `exercises.md` document in each workshop folder. their solutions are found in the `solutions/` sub-folder.
+the exercises, are found in the `exercises.md` document in each the `exercises/` sub-folder. their solutions are found in the `solutions/` sub-folder.
 

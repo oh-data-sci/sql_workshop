@@ -1,14 +1,14 @@
 sql workshops
 ===
 # introduction
-this is a trilogy of free workshops on sql for beginners offered in the brighton data forum in 2023. the workshops are 
+this is a trilogy of free workshops on sql for beginners offered in the brighton data forum since 2023. the workshops are:
 
 1. **from zero to query** (for absolute beginners, introduces the `SELECT` statement and some variants of it)
-2. **the sql sequel** (the next step for beginners, a short refresher, followed by introduction to subqueries, common table expressions, pivots)
-3. **tbd** (a planned follow-up for slightly more advanced topics like window functions and user defined functions)
+2. **the sql sequel - WIP** (the next step for beginners, a short refresher, followed by introduction to subqueries, common table expressions, pivots)
+3. **tbd - WIP** (a planned follow-up for slightly more advanced topics like window functions and user defined functions)
 
 # preparation
-since this is a workshop with exercises, the only way to benefit from this is by following/doing the exercises. this requires some preparation:
+since these are workshops with exercises, the only way to benefit from the repo is by following/doing the exercises. this requires some preparation:
 
 	1. clone or download this repo. 
     2. install sqlite.
