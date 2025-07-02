@@ -14,7 +14,7 @@ in this first workshop, aimed at absolute beginners and spreadsheet users, we wi
 
 
 # getting started
-![from zero to query](../img/from02sql.001.jpeg)
+![from zero to query](../img/01_fromzerotoquery.png)
 
 
 # slides
