@@ -36,5 +36,5 @@ while we cover all the clauses of the `SELECT` statement, we do not cover the fu
 
 
 # the exercises
-the exercises, are found in the `exercises.md` document in each the `exercises/` sub-folder. their solutions are found in the `solutions/` sub-folder.
+the exercises, are found in the `exercises.md` document in the `exercises/` sub-folder. their solutions are found in the `solutions/` sub-folder.
 
